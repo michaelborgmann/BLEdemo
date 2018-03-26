@@ -38,12 +38,12 @@ export class DemoAppModel extends observable.Observable {
         });
     };
 
-    doScanForHeartrateMontitor() {
-        console.log("[!] main-view-model.doScanForHeartrateMontitor");
+    doScanForSmartLightSwitch() {
+        console.log("[!] main-view-model.doScanForSmartLightSwitch");
 
         dialogs.alert({
             title: "Ooops",
-            message: "Heart rate monitor is not supported",
+            message: "The Smart Light Switch isn't yet fully supported",
             okButtonText: "OK!"
           });
     }
