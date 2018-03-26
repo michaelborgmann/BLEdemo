@@ -1,0 +1,8 @@
+{
+  "android": {
+    "v8Flags": "--expose_gc"
+  },
+  "main": "app.js",
+  "name": "bluetooth_le_demo",
+  "version": "0.1"
+}

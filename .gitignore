@@ -1,0 +1,5 @@
+app/app/**/*.js
+app/platforms/
+app/hooks/
+app/node_modules/
+
