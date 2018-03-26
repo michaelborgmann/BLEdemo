@@ -6,7 +6,6 @@ This is just a simple demo to learn about [Bluetooth LE](https://de.wikipedia.or
 
 I'm using a very simple circuit from the book [Make: Bluetooth](https://www.makershed.com/products/make-bluetooth), a variation of the [Smart Light Switch](https://makezine.com/projects/diy-smart-light-switch/).
 
-
 ### Components
 * [Arduino](https://www.arduino.cc/) UNO Rev 3
 * [Adafruit Bluefruit LE](https://www.adafruit.com/product/1697) shield
@@ -18,4 +17,9 @@ I'm using a very simple circuit from the book [Make: Bluetooth](https://www.make
 
 ### Schematics: Smart Light Switch
 
+The purpose of this switch is simply to turn the LED light on/off, either by pressing the switch or by BLE. This can be done on your smartphone with the app [LightBlue](https://punchthrough.com/), for example.
+
+After assembling the circuit upload the [SmartLightSwitch.ino](https://github.com/michaelborgmann/BLEdemo/blob/master/SmartLightSwitch.ino) to the Arduino.
+
 ![alt text](https://i0.wp.com/makezine.com/wp-content/uploads/2016/04/ble-light-switch.jpg?resize=620%2C482&ssl=1 "Smart Light Switch")
+
