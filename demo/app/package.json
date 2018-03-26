@@ -4,5 +4,5 @@
   },
   "main": "app.js",
   "name": "bluetooth_le_demo",
-  "version": "0.1"
+  "version": "0.2"
 }

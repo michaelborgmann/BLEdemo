@@ -1,5 +1,6 @@
-app/app/**/*.js
-app/platforms/
-app/hooks/
-app/node_modules/
+.DS_Store
+demo/app/**/*.js
+demo/platforms/
+demo/hooks/
+demo/node_modules/
 

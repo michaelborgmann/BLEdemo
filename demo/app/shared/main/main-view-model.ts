@@ -13,6 +13,8 @@ export class DemoAppModel extends observable.Observable {
     constructor() { super(); }
 
     doIsBluetoothEnabled() {
+        console.log("[!] main-view-model.doIsBluetoothEnabled");
+
         bluetooth.isBluetoothEnabled().then(function(enabled) {
             dialogs.alert({
               title: "Enabled?",
@@ -22,7 +24,33 @@ export class DemoAppModel extends observable.Observable {
         });
     }
 
+    doEnableBluetooth() {
+        console.log("[!] main-view-model.doEnableBluetooth");
+
+        bluetooth.enable().then(function(enabled) {
+          setTimeout(function() {
+            dialogs.alert({
+              title: "Did the user allow enabling Bluetooth by our app?",
+              message: enabled ? "Yes" : "No",
+              okButtonText: "OK, nice!"
+            });
+          }, 500);
+        });
+    };
+
+    doScanForHeartrateMontitor() {
+        console.log("[!] main-view-model.doScanForHeartrateMontitor");
+
+        dialogs.alert({
+            title: "Ooops",
+            message: "Heart rate monitor is not supported",
+            okButtonText: "OK!"
+          });
+    }
+
     doStartScanning() {
+        console.log("[!] main-view-model.doStartScanning");
+
         // this one uses automatic permission handling
         var that = this;
         that.set('isLoading', true);
@@ -47,6 +75,8 @@ export class DemoAppModel extends observable.Observable {
     }
 
     doStopScanning() {
+        console.log("[!] main-view-model.doStopScanning");
+
         var that = this;
         bluetooth.stopScanning().then(function() {
             that.set('isLoading', false);
@@ -60,11 +90,13 @@ export class DemoAppModel extends observable.Observable {
     }
 
     onPeripheralTap(args) {
+        console.log("[!] main-view-model.onPeripheralTap");
+
         var index = args.index;
         var peri = observablePeripheralArray.getItem(index)
     
         var navigationEntry = {
-          moduleName: "services-page",
+          moduleName: "shared/services/services-page",
           context: {
             info: "something you want to pass to your page",
             foo: 'bar',

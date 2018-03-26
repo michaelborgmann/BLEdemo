@@ -29,3 +29,5 @@ export function pageLoaded(args: EventData) {
     */
     page.bindingContext = new DemoAppModel();
 }
+
+export var onPeripheralTap = DemoAppModel.prototype.onPeripheralTap;
