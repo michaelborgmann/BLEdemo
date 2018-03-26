@@ -28,3 +28,7 @@ After assembling the circuit upload the [SmartLightSwitch.ino](https://github.co
 To control the Smart Light Switch with BLE I am creating a crossplatform mobile app using [NativeScript](https://www.nativescript.org/) with [TypeScript](http://www.typescriptlang.org/) and the [NativeScript Bluetooth](https://github.com/EddyVerbruggen/nativescript-bluetooth) plugin.
 
 It seems like the iOS Simulator doesn't support Bluetooth anymore, and you have to use an iPhone. Find your device id with `instruments -s devices` and run the app on the device with `tns run ios --device [ID]`.
+
+### Just to mention it
+
+The current version of the mobile app relies on the [nativescript-bluetooth-demo](https://github.com/EddyVerbruggen/nativescript-bluetooth-demo).
